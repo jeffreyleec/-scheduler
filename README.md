@@ -53,12 +53,14 @@ npm run storybook
 ## Final Product
 
 !["Single page scheduler"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/mainPage.png)
+
 !["Story Book component building"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/storyBook.png)
+
 !["Deleting/saving messages"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/Deleting.png)
+
 !["Error handling with messages"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/ErrorMessages.png)
+
 !["Dynamic Spots remaining"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/spotsRemaining.png)
-
-
 
 
 
