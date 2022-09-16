@@ -1,6 +1,8 @@
 # Scheduler App
 Development focuses on a single page application (SPA) called Interview Scheduler, built using React.
+
 Data is persisted by the API server using a PostgreSQL database.
+
 The client application communicates with an API server over HTTP, using the JSON format.
 Jest tests are used through the development of the project.
 
@@ -48,8 +50,20 @@ npm run storybook
 - NPM 5.x or above
 - PG 6.x
 
-## 
-<>
+## Final Product
+
+!["Single page scheduler"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/mainPage.png)
+!["Story Book component building"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/storyBook.png)
+!["Deleting/saving messages"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/Deleting.png)
+!["Error handling with messages"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/ErrorMessages.png)
+!["Dynamic Spots remaining"](https://github.com/jeffreyleec/-scheduler/blob/master/docs/spotsRemaining.png)
+
+
+
+
+
+
+
 
 ## Authors
 
