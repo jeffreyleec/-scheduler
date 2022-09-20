@@ -33,7 +33,8 @@ export default function useApplicationData(props) {
     });
   }, []);
 
-
+//obtains number of spots left for the specific day 
+//gets spots
   const getSpotsForDays = function (day, appointments) {
     let spots = 0;
     for (const id of day.appointments) {
@@ -46,7 +47,7 @@ export default function useApplicationData(props) {
 
     return spots;
   }
-
+//after getting spots, updates the spots with the remaining spots
   const updateSpots = function (state, appointments, id) {
     const dayObj = state.days.find(day => day.name === state.day)
 
@@ -82,7 +83,7 @@ export default function useApplicationData(props) {
 
 
   }
-
+  //cancel interview function that updates the database (deletes item) and makes changes to reflex empty MODE
   const cancelInterview = function (id) {
 
     const appointment = {

@@ -28,12 +28,13 @@ export default function Appointment(props) {
     props.interview ? SHOW : EMPTY
   );
 
+    //saves an appointment and updates database 
   function save(name, interviewer) {
     const interview = {
       student: name,
       interviewer
     };
-    transition(SAVING, true)
+    transition(SAVING)
     props.bookInterview(props.id, interview)
       .then(() => transition(SHOW))
       .catch((error) => {
@@ -41,12 +42,14 @@ export default function Appointment(props) {
       })
   }
 
+   //SHOWS confirm mode when pressing delete 
   function onDelete() {
     transition(CONFIRM)
   }
 
+    //return back and not delete. AFTER pressing delete
   function cancel() {
-    transition(DELETING, true)
+    transition(DELETING)
     props.cancelInterview(props.id)
       .then(() => transition(EMPTY))
       .catch((error) => transition(ERROR_DELETE, true))
@@ -57,9 +60,9 @@ export default function Appointment(props) {
 
   return (
 
-    <article className="appointment" data-testid="appointment">
+    <article className="appointment appointment__separator" data-testid="appointment" >
       <header>{props.time}</header>
-
+    
       {mode === EMPTY && <Empty onAdd={() => transition(CREATE)} />}
       {mode === SHOW && (
         <Show
