@@ -1,14 +1,10 @@
 import React from "react";
 
-
-
 export default function Show(props) {
-  
-  const onDelete = function(event){
-     event.preventDefault()
-     props.onDelete()
-        
-  }
+  const onDelete = function (event) {
+    event.preventDefault();
+    props.onDelete();
+  };
 
   return (
     <main className="appointment__card appointment__card--show">

@@ -4,8 +4,6 @@ import Button from "components/Button";
 
 afterEach(cleanup);
 
-
-
 it.skip("renders its `children` prop as text", () => {
   const { getByText } = render(<Button>Default</Button>);
   expect(getByText("Default")).toBeInTheDocument();
@@ -48,8 +46,6 @@ it("renders a disabled button", () => {
   );
 
   const button = getByText("Disabled");
-
   fireEvent.click(button);
-
   expect(handleClick).toHaveBeenCalledTimes(0);
 });
